@@ -17,7 +17,6 @@ import imgTailwind from '../assets/my skills/frontend/tailwindcss.png';
 
 // ── Backend images ───────────────────────────────────────────────────
 import imgDotNet from '../assets/my skills/backend/.net.png';
-import imgExpress from '../assets/my skills/backend/express.png';
 import imgLaravel from '../assets/my skills/backend/Laravel-Logo.wine.png';
 import imgCSharp from '../assets/my skills/backend/csharp-logo-265a149e.svg';
 import imgDjango from '../assets/my skills/backend/django.png';
@@ -71,7 +70,7 @@ const backendSkills = [
   { name: 'PHP', image: imgPHP, color: '#777bb4' },
   { name: 'Laravel', image: imgLaravel, color: '#ff2d20' },
   { name: 'Node.js', image: imgNode, color: '#339933' },
-  { name: 'Express.js', image: imgExpress, color: '#eeeeee' },
+  { name: 'Express.js', image: imgNode, color: '#eeeeee' },
   { name: 'MongoDB', image: imgMongo, color: '#47a248' },
   { name: 'Java', image: imgJava, color: '#007396' },
   { name: 'Spring Boot', image: imgSpring, color: '#6db33f' },

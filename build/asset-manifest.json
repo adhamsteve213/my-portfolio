@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c7fe833.css",
-    "main.js": "/static/js/main.b572aa47.js",
+    "main.js": "/static/js/main.480c23fc.js",
     "static/js/453.3f1fb51b.chunk.js": "/static/js/453.3f1fb51b.chunk.js",
     "static/media/Screenshot 2026-03-13 032543.png": "/static/media/Screenshot 2026-03-13 032543.e52e19f9751c2fb1ee61.png",
     "static/media/Screenshot 2026-04-18 020653.png": "/static/media/Screenshot 2026-04-18 020653.cd6254f88212c711c346.png",
@@ -104,7 +104,6 @@
     "static/media/mongodb.png": "/static/media/mongodb.1284faf9338655b58935.png",
     "static/media/css.png": "/static/media/css.c97e30272fb0b8b0948f.png",
     "static/media/WhatsApp Image 2026-01-19 at 2.19.21 PM (1).jpeg": "/static/media/WhatsApp Image 2026-01-19 at 2.19.21 PM (1).bc93ccbe6c8c8725e754.jpeg",
-    "static/media/express.png": "/static/media/express.fd9d7b8ab10b4dc50382.png",
     "static/media/WhatsApp Image 2026-01-19 at 2.19.20 PM (1).jpeg": "/static/media/WhatsApp Image 2026-01-19 at 2.19.20 PM (1).034bad932f27344cef75.jpeg",
     "static/media/django.png": "/static/media/django.0bbfa77f2cfdc0a9ad59.png",
     "static/media/python_logo_icon_168886.webp": "/static/media/python_logo_icon_168886.e8da53f69e2c976bc243.webp",
@@ -114,11 +113,11 @@
     "static/media/csharp-logo-265a149e.svg": "/static/media/csharp-logo-265a149e.76f7c38864535e2e035fb9959eb30091.svg",
     "static/media/HTML5_logo_and_wordmark.svg": "/static/media/HTML5_logo_and_wordmark.aff8a9cb398fc75e4f21dab1ba1e097e.svg",
     "main.0c7fe833.css.map": "/static/css/main.0c7fe833.css.map",
-    "main.b572aa47.js.map": "/static/js/main.b572aa47.js.map",
+    "main.480c23fc.js.map": "/static/js/main.480c23fc.js.map",
     "453.3f1fb51b.chunk.js.map": "/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7fe833.css",
-    "static/js/main.b572aa47.js"
+    "static/js/main.480c23fc.js"
   ]
 }
