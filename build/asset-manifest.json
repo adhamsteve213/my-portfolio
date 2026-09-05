@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c7fe833.css",
-    "main.js": "/static/js/main.480c23fc.js",
+    "main.js": "/static/js/main.67127268.js",
     "static/js/453.3f1fb51b.chunk.js": "/static/js/453.3f1fb51b.chunk.js",
     "static/media/Screenshot 2026-03-13 032543.png": "/static/media/Screenshot 2026-03-13 032543.e52e19f9751c2fb1ee61.png",
     "static/media/Screenshot 2026-04-18 020653.png": "/static/media/Screenshot 2026-04-18 020653.cd6254f88212c711c346.png",
@@ -94,7 +94,6 @@
     "static/media/Git_icon.svg.webp": "/static/media/Git_icon.svg.f0cc4048f9b0891b2f09.webp",
     "static/media/spring-boot.png": "/static/media/spring-boot.cd055c2681fd0571969e.png",
     "static/media/sql-server-tutorial.svg": "/static/media/sql-server-tutorial.8f70a0d524257f6a98583fa7c3bc8222.svg",
-    "static/media/.net.png": "/static/media/.net.07e86d5f66add337870a.png",
     "static/media/aws.png": "/static/media/aws.cc15d5da5ae7cdc7d2a7.png",
     "static/media/nodejs.png": "/static/media/nodejs.167c295796d9d0e4ddf6.png",
     "static/media/WhatsApp Image 2026-01-19 at 2.19.19 PM.jpeg": "/static/media/WhatsApp Image 2026-01-19 at 2.19.19 PM.6bac25bb3c08d3491386.jpeg",
@@ -113,11 +112,11 @@
     "static/media/csharp-logo-265a149e.svg": "/static/media/csharp-logo-265a149e.76f7c38864535e2e035fb9959eb30091.svg",
     "static/media/HTML5_logo_and_wordmark.svg": "/static/media/HTML5_logo_and_wordmark.aff8a9cb398fc75e4f21dab1ba1e097e.svg",
     "main.0c7fe833.css.map": "/static/css/main.0c7fe833.css.map",
-    "main.480c23fc.js.map": "/static/js/main.480c23fc.js.map",
+    "main.67127268.js.map": "/static/js/main.67127268.js.map",
     "453.3f1fb51b.chunk.js.map": "/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7fe833.css",
-    "static/js/main.480c23fc.js"
+    "static/js/main.67127268.js"
   ]
 }

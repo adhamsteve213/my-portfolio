@@ -16,7 +16,6 @@ import imgNuxtJS from '../assets/my skills/frontend/images.png';
 import imgTailwind from '../assets/my skills/frontend/tailwindcss.png';
 
 // ── Backend images ───────────────────────────────────────────────────
-import imgDotNet from '../assets/my skills/backend/.net.png';
 import imgLaravel from '../assets/my skills/backend/Laravel-Logo.wine.png';
 import imgCSharp from '../assets/my skills/backend/csharp-logo-265a149e.svg';
 import imgDjango from '../assets/my skills/backend/django.png';
@@ -62,7 +61,7 @@ const frontendSkills = [
 
 const backendSkills = [
   { name: 'C#', image: imgCSharp, color: '#239120' },
-  { name: 'ASP.NET', image: imgDotNet, color: '#512bd4' },
+  { name: 'ASP.NET', image: imgCSharp, color: '#512bd4' },
   { name: 'SQL Server', image: imgSQL, color: '#cc2927' },
   { name: 'MySQL', image: imgMySQL, color: '#4479a1' },
   { name: 'Python', image: imgPython, color: '#3776ab' },
