@@ -19,6 +19,7 @@ const Footer = ({ language, translations }) => {
           <a href="#skills">{t.skills}</a>
           <a href="#portfolio">{t.portfolio}</a>
           <a href="#contact">{t.contact}</a>
+          <a href="#admin">Admin</a>
         </div>
 
         <div className="footer-social">

@@ -14,6 +14,7 @@ function App() {
   const [language, setLanguage] = useState('en');
   const [theme, setTheme] = useState('dark');
   const [loading, setLoading] = useState(true);
+  const [isAdminPage, setIsAdminPage] = useState(window.location.hash === '#admin');
 
   useEffect(() => {
     // Simulate loading
@@ -36,7 +37,13 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  if (window.location.hash === '#admin') {
+  useEffect(() => {
+    const handleHashChange = () => setIsAdminPage(window.location.hash === '#admin');
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  if (isAdminPage) {
     return <AdminPanel />;
   }
 
