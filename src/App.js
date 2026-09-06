@@ -7,7 +7,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AdminPanel from './components/AdminPanel';
 import translations from './translations';
+
 
 function App() {
   const [language, setLanguage] = useState('en');
@@ -34,6 +36,12 @@ function App() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
+
+  const isAdminPanel = window.location.pathname.replace(/\/+$/, '') === '/adminpanel';
+
+  if (isAdminPanel) {
+    return <AdminPanel />;
+  }
 
   if (loading) {
     return (

@@ -14,11 +14,12 @@ const Footer = ({ language, translations }) => {
         </div>
 
         <div className="footer-links">
-          <a href="#home">{t.home}</a>
-          <a href="#about">{t.about}</a>
-          <a href="#skills">{t.skills}</a>
-          <a href="#portfolio">{t.portfolio}</a>
-          <a href="#contact">{t.contact}</a>
+          <a href="/">{t.home}</a>
+          <a href="/about">{t.about}</a>
+          <a href="/skills">{t.skills}</a>
+          <a href="/portfolio">{t.portfolio}</a>
+          <a href="/contact">{t.contact}</a>
+           <a href="/adminpanel">{t.adminpanel}</a>
         </div>
 
         <div className="footer-social">
