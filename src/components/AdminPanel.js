@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import './AdminPanel.css';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://portfolio-back-main-tzmdch.laravel.cloud/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || '/api';
 const TOKEN_KEY = 'portfolio_admin_token';
 
 const convertFileToJpeg = async (file) => {
