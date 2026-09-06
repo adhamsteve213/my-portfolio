@@ -9,7 +9,7 @@
  *  - images: array of imported images from the folder
  */
 
-// --- Static image loaders per folder ---
+// --- Image loaders per project folder ---
 // require.context MUST use a literal string so Webpack can statically resolve it at build time
 
 const loadAppleImages = () => {
