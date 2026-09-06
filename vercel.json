@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://portfolio-back-main-tzmdch.laravel.cloud/api/:path*"
+      "destination": "https://portfolio-back-main-47f9772a6221.herokuapp.com/api/:path*"
     },
     {
       "source": "/(.*)",
