@@ -23,6 +23,8 @@ import imgJava from '../assets/my skills/backend/java.png';
 import imgMongo from '../assets/my skills/backend/mongodb.png';
 import imgMySQL from '../assets/my skills/backend/mysql.png';
 import imgNode from '../assets/my skills/backend/nodejs.png';
+import imgExpress from '../assets/my skills/backend/express.png';
+import imgDotNet from '../assets/my skills/backend/.net.png';
 import imgPHP from '../assets/my skills/backend/php-logo-png_seeklogo-108600.png';
 import imgPython from '../assets/my skills/backend/python_logo_icon_168886.webp';
 import imgSpring from '../assets/my skills/backend/spring-boot.png';
@@ -43,6 +45,15 @@ import imgFigma from '../assets/my skills/UIUX/figma.png';
 import imgMake from '../assets/my skills/Ai Automation/make.png';
 import imgN8N from '../assets/my skills/Ai Automation/n8n.webp';
 
+// ── Mobile Apps images ──────────────────────────────────────────────
+import imgFlutter from '../assets/my skills/mobile apps/flutter-logo-sharing-removebg-preview.png';
+import imgReactNative from '../assets/my skills/mobile apps/react_native-removebg-preview.png';
+
+// ── Productivity images ─────────────────────────────────────────────
+import imgExcel from '../assets/my skills/productivity/excel-removebg-preview.png';
+import imgGoogleSheets from '../assets/my skills/productivity/google-sheets-blog-banner-removebg-preview.png';  
+import imgNotion from '../assets/my skills/productivity/notion-removebg-preview.png';
+
 // ── Skill data ───────────────────────────────────────────────────────
 const frontendSkills = [
   { name: 'HTML5', image: imgHTML5, color: '#e44d26' },
@@ -61,7 +72,7 @@ const frontendSkills = [
 
 const backendSkills = [
   { name: 'C#', image: imgCSharp, color: '#239120' },
-  { name: 'ASP.NET', image: imgCSharp, color: '#512bd4' },
+  { name: 'ASP.NET', image: imgDotNet, color: '#512bd4' },
   { name: 'SQL Server', image: imgSQL, color: '#cc2927' },
   { name: 'MySQL', image: imgMySQL, color: '#4479a1' },
   { name: 'Python', image: imgPython, color: '#3776ab' },
@@ -69,10 +80,12 @@ const backendSkills = [
   { name: 'PHP', image: imgPHP, color: '#777bb4' },
   { name: 'Laravel', image: imgLaravel, color: '#ff2d20' },
   { name: 'Node.js', image: imgNode, color: '#339933' },
-  { name: 'Express.js', image: imgNode, color: '#eeeeee' },
+  { name: 'Express.js', image: imgExpress, color: '#eeeeee' },
   { name: 'MongoDB', image: imgMongo, color: '#47a248' },
   { name: 'Java', image: imgJava, color: '#007396' },
   { name: 'Spring Boot', image: imgSpring, color: '#6db33f' },
+  { name: 'SQL', image: imgSQL, color: '#f29111' },
+  
 ];
 
 const softwareSkills = [
@@ -93,6 +106,17 @@ const aiSkills = [
   { name: 'n8n', image: imgN8N, color: '#ea4b71' },
 ];
 
+const mobileSkills = [
+  { name: 'Flutter', image: imgFlutter, color: '#02569b' },
+  { name: 'React Native', image: imgReactNative, color: '#61dafb' },
+];
+
+const productivitySkills = [
+  { name: 'Microsoft Excel', image: imgExcel, color: '#217346' },
+  { name: 'Google Sheets', image: imgGoogleSheets, color: '#34a853' },
+  { name: 'Notion', image: imgNotion, color: '#000000' },
+];
+
 // ── Tab config ───────────────────────────────────────────────────────
 const TABS = [
   { id: 'frontend', labelKey: 'frontend', icon: 'fas fa-code', skills: frontendSkills },
@@ -100,14 +124,29 @@ const TABS = [
   { id: 'software', labelKey: 'softwareSolutions', icon: 'fas fa-cogs', skills: softwareSkills },
   { id: 'uiux', labelKey: 'uiux', icon: 'fas fa-paint-brush', skills: uiuxSkills },
   { id: 'ai', labelKey: 'aiAutomations', icon: 'fas fa-robot', skills: aiSkills },
+  { id: 'mobile', labelKey: 'mobileApps', icon: 'fas fa-mobile-alt', skills: mobileSkills },
+  { id: 'productivity', labelKey: 'productivity', icon: 'fas fa-chart-line', skills: productivitySkills },
 ];
+
+const SKILLS_PER_PAGE = 8;
 
 const Skills = ({ language, translations }) => {
   const t = translations[language];
   const [activeTab, setActiveTab] = useState('frontend');
+  const [currentPage, setCurrentPage] = useState(1);
 
   const activeTabData = TABS.find(tab => tab.id === activeTab);
   const skills = activeTabData ? activeTabData.skills : [];
+  const totalPages = Math.ceil(skills.length / SKILLS_PER_PAGE);
+  const visibleSkills = skills.slice(
+    (currentPage - 1) * SKILLS_PER_PAGE,
+    currentPage * SKILLS_PER_PAGE
+  );
+
+  const selectTab = (tabId) => {
+    setActiveTab(tabId);
+    setCurrentPage(1);
+  };
 
   return (
     <section id="skills" className={`skills ${language === 'ar' ? 'rtl' : ''}`}>
@@ -119,13 +158,13 @@ const Skills = ({ language, translations }) => {
           <p className="section-subtitle">{t.skillsSubtitle}</p>
         </div>
 
-        {/* ── 5 Sub-Navbars ── */}
+        {/* ── Skill category navigation ── */}
         <div className="skills-tabs">
           {TABS.map(tab => (
             <button
               key={tab.id}
               className={`tab-btn ${activeTab === tab.id ? 'active' : ''}`}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => selectTab(tab.id)}
             >
               <i className={tab.icon}></i>
               {t[tab.labelKey] || tab.id}
@@ -136,7 +175,7 @@ const Skills = ({ language, translations }) => {
 
         {/* ── Skills Grid ── */}
         <div className="skills-grid" key={activeTab}>
-          {skills.map((skill, index) => (
+          {visibleSkills.map((skill, index) => (
             <a
               href={skill.link}
               target="_blank"
@@ -162,6 +201,38 @@ const Skills = ({ language, translations }) => {
             </a>
           ))}
         </div>
+
+        {totalPages > 1 && (
+          <nav className="skills-pagination" aria-label={t.skillsPagination}>
+            <button
+              className="pagination-btn"
+              onClick={() => setCurrentPage(page => Math.max(1, page - 1))}
+              disabled={currentPage === 1}
+              aria-label={t.previousPage}
+            >
+              <i className="fas fa-chevron-left"></i>
+            </button>
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map(page => (
+              <button
+                key={page}
+                className={`pagination-btn ${currentPage === page ? 'active' : ''}`}
+                onClick={() => setCurrentPage(page)}
+                aria-label={`${t.page} ${page}`}
+                aria-current={currentPage === page ? 'page' : undefined}
+              >
+                {page}
+              </button>
+            ))}
+            <button
+              className="pagination-btn"
+              onClick={() => setCurrentPage(page => Math.min(totalPages, page + 1))}
+              disabled={currentPage === totalPages}
+              aria-label={t.nextPage}
+            >
+              <i className="fas fa-chevron-right"></i>
+            </button>
+          </nav>
+        )}
 
         <div className="skills-decoration">
           <div className="deco-circle deco-1"></div>

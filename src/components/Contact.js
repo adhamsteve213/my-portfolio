@@ -40,7 +40,7 @@ const Contact = ({ language, translations }) => {
       color: '#E4405F',
       bg: 'rgba(228, 64, 95, 0.1)',
       items: [
-        { value: '@adhamprogcode123', link: 'https://www.instagram.com/adhamprogcode123?igsh=MWwyd2tnenpwaW15bA==' },
+        { value: '@adhamprogcode123', link: 'https://www.instagram.com/adhamprogcode123/' },
       ]
     },
     {

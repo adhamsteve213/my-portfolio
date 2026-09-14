@@ -56,6 +56,9 @@ const Navbar = ({ language, setLanguage, translations, theme, setTheme }) => {
               <a href="https://www.instagram.com/adhamprogcode123?igsh=MWwyd2tnenpwaW15bA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
+               <a href="https://www.behance.net/adhamsteve" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i className="fab fa-behance"></i>
+            </a>
             </div>
 
             <div className="language-switcher">
@@ -157,9 +160,13 @@ const Navbar = ({ language, setLanguage, translations, theme, setTheme }) => {
             <a href="https://github.com/adhamsteve213" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/adhamsyntax01/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/adhamprogcode123/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
+             <a href="https://www.behance.net/adhamsteve" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i className="fab fa-behance"></i>
+            </a>
+            
           </div>
         </div>
       </aside>

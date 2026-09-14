@@ -52,6 +52,12 @@ const translations = {
     softwareSolutions: 'Software Solutions',
     uiux: 'UI/UX',
     aiAutomations: 'AI Automations',
+    mobileApps: 'Mobile Apps',
+    productivity: 'Productivity',
+    skillsPagination: 'Skills pages',
+    previousPage: 'Previous page',
+    nextPage: 'Next page',
+    page: 'Page',
     otherSkills: 'Other',
 
     // Projects
@@ -137,6 +143,12 @@ const translations = {
     softwareSolutions: 'حلول برمجية',
     uiux: 'تصميم UI/UX',
     aiAutomations: 'أتمتة الذكاء الاصطناعي',
+    mobileApps: 'تطبيقات الهاتف',
+    productivity: 'الإنتاجية',
+    skillsPagination: 'صفحات المهارات',
+    previousPage: 'الصفحة السابقة',
+    nextPage: 'الصفحة التالية',
+    page: 'صفحة',
     otherSkills: 'أخرى',
 
     // Projects
