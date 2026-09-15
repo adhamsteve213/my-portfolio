@@ -5,6 +5,7 @@ const translations = {
     about: 'About',
     skills: 'Skills',
     portfolio: 'Portfolio',
+    certificates: 'Certificates',
     contact: 'Contact',
     hireMeNav: 'Hire Me',
 
@@ -72,6 +73,12 @@ const translations = {
     emptyFolder: 'Empty Folder',
     noImages: 'No images in this folder yet.',
 
+    // Certificates
+    certificatesTag: 'Credentials',
+    certificatesTitle: 'Certificates',
+    certificatesSubtitle: 'Professional certificates and completed courses.',
+    openCertificate: 'Open Certificate',
+
     // Contact
     contactTag: 'Get In Touch',
     contactTitle: 'Get In Touch',
@@ -96,6 +103,7 @@ const translations = {
     about: 'عني',
     skills: 'المهارات',
     portfolio: 'المشاريع',
+    certificates: 'الشهادات',
     contact: 'تواصل',
     hireMeNav: 'وظفني',
 
@@ -162,6 +170,12 @@ const translations = {
     images: 'صور',
     emptyFolder: 'مجلد فارغ',
     noImages: 'لا توجد صور في هذا المجلد بعد.',
+
+    // Certificates
+    certificatesTag: 'الاعتمادات',
+    certificatesTitle: 'الشهادات',
+    certificatesSubtitle: 'الشهادات المهنية والدورات التي أكملتها.',
+    openCertificate: 'فتح الشهادة',
 
     // Contact
     contactTag: 'تواصل معي',

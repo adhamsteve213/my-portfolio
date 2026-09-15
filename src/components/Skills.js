@@ -53,7 +53,12 @@ import imgReactNative from '../assets/my skills/mobile apps/react_native-removeb
 import imgExcel from '../assets/my skills/productivity/excel-removebg-preview.png';
 import imgGoogleSheets from '../assets/my skills/productivity/google-sheets-blog-banner-removebg-preview.png';  
 import imgNotion from '../assets/my skills/productivity/notion-removebg-preview.png';
-
+//ai tools
+import imgChatGPT from '../assets/my skills/ai tools/Openai-Logo-Knot-Icon-Symbol-Design-PNG.png';
+import imgcopilot from '../assets/my skills/ai tools/microsoft-365-copilot-logo-png_seeklogo-501781-removebg-preview.png';
+import imggemini from '../assets/my skills/ai tools/Google-Gemini-Logo-Transparent-thumb-removebg-preview.png';
+import imgdeepseek from '../assets/my skills/ai tools/deepseek_logo-removebg-preview.png';
+import imgclaude from '../assets/my skills/ai tools/claude_logo-removebg-preview.png';
 // ── Skill data ───────────────────────────────────────────────────────
 const frontendSkills = [
   { name: 'HTML5', image: imgHTML5, color: '#e44d26' },
@@ -116,7 +121,13 @@ const productivitySkills = [
   { name: 'Google Sheets', image: imgGoogleSheets, color: '#34a853' },
   { name: 'Notion', image: imgNotion, color: '#000000' },
 ];
-
+const aiToolsSkills = [
+  { name: 'ChatGPT', image: imgChatGPT, color: '#00a67e' },
+  { name: 'Microsoft Copilot', image: imgcopilot, color: '#0078d4' },
+  { name: 'Google Gemini', image: imggemini, color: '#4285f4' },
+  { name: 'DeepSeek', image: imgdeepseek, color: '#ff6f00' },
+  { name: 'Claude', image: imgclaude, color: '#ff4500' },
+];
 // ── Tab config ───────────────────────────────────────────────────────
 const TABS = [
   { id: 'frontend', labelKey: 'frontend', icon: 'fas fa-code', skills: frontendSkills },
@@ -126,6 +137,7 @@ const TABS = [
   { id: 'ai', labelKey: 'aiAutomations', icon: 'fas fa-robot', skills: aiSkills },
   { id: 'mobile', labelKey: 'mobileApps', icon: 'fas fa-mobile-alt', skills: mobileSkills },
   { id: 'productivity', labelKey: 'productivity', icon: 'fas fa-chart-line', skills: productivitySkills },
+  { id: 'aiTools', labelKey: 'aiTools', icon: 'fas fa-robot', skills: aiToolsSkills },
 ];
 
 const SKILLS_PER_PAGE = 8;

@@ -1,0 +1,127 @@
+.certificates {
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.certificates.rtl {
+  direction: rtl;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 3rem auto 0;
+}
+
+.certificate-card {
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(102, 126, 234, 0.55);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
+}
+
+.certificate-preview {
+  display: block;
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+
+.certificate-preview object {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+}
+
+.certificate-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.7);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.certificate-preview:hover .certificate-overlay,
+.certificate-preview:focus-visible .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-fallback {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  color: #64748b;
+}
+
+.certificate-fallback i {
+  color: #dc2626;
+  font-size: 3rem;
+}
+
+.certificate-info {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 70px;
+  padding: 1rem 1.1rem;
+}
+
+.certificate-info i {
+  color: #f59e0b;
+  font-size: 1.1rem;
+}
+
+.certificate-info h3 {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .certificates {
+    padding: 4rem 1rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .certificate-preview {
+    height: 220px;
+  }
+
+  .certificate-info {
+    min-height: 64px;
+    padding: 0.8rem;
+  }
+
+  .certificate-info h3 {
+    font-size: 0.88rem;
+  }
+}
