@@ -78,6 +78,9 @@ const translations = {
     certificatesTitle: 'Certificates',
     certificatesSubtitle: 'Professional certificates and completed courses.',
     openCertificate: 'Open Certificate',
+    closeCertificate: 'Close certificate details',
+    certificateLink: 'View certificate link',
+    downloadCertificate: 'Download PDF',
 
     // Contact
     contactTag: 'Get In Touch',
@@ -176,6 +179,9 @@ const translations = {
     certificatesTitle: 'الشهادات',
     certificatesSubtitle: 'الشهادات المهنية والدورات التي أكملتها.',
     openCertificate: 'فتح الشهادة',
+    closeCertificate: 'إغلاق تفاصيل الشهادة',
+    certificateLink: 'عرض رابط الشهادة',
+    downloadCertificate: 'تحميل PDF',
 
     // Contact
     contactTag: 'تواصل معي',
