@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
+import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AdminPanel from './components/AdminPanel';
@@ -84,6 +85,7 @@ function App() {
       <Skills language={language} translations={translations} />
       <Projects language={language} translations={translations} />
       <Certificates language={language} translations={translations} />
+      <Reviews language={language} translations={translations} />
 
       <Contact language={language} translations={translations} />
       <Footer language={language} translations={translations} />

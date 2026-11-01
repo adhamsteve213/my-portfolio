@@ -82,6 +82,12 @@ const translations = {
     certificateLink: 'View certificate link',
     downloadCertificate: 'Download PDF',
 
+    // Reviews
+    reviews: 'Reviews',
+    reviewsTag: 'Client Feedback',
+    reviewsTitle: 'What Clients Say',
+    reviewsSubtitle: 'Positive feedback from people and teams I have worked with.',
+
     // Contact
     contactTag: 'Get In Touch',
     contactTitle: 'Get In Touch',
@@ -182,6 +188,12 @@ const translations = {
     closeCertificate: 'إغلاق تفاصيل الشهادة',
     certificateLink: 'عرض رابط الشهادة',
     downloadCertificate: 'تحميل PDF',
+
+    // Reviews
+    reviews: 'آراء العملاء',
+    reviewsTag: 'آراء العملاء',
+    reviewsTitle: 'ماذا يقول العملاء',
+    reviewsSubtitle: 'آراء إيجابية من أشخاص وفرق عملت معهم.',
 
     // Contact
     contactTag: 'تواصل معي',

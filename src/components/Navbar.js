@@ -31,6 +31,7 @@ const Navbar = ({ language, setLanguage, translations, theme, setTheme }) => {
     { href: '#skills', label: t.skills, icon: 'fas fa-code' },
     { href: '#portfolio', label: t.portfolio, icon: 'fas fa-briefcase' },
     { href: '#certificates', label: t.certificates, icon: 'fas fa-certificate' },
+    { href: '#reviews', label: t.reviews, icon: 'fas fa-star' },
     { href: '#contact', label: t.contact, icon: 'fas fa-envelope' },
   ];
 

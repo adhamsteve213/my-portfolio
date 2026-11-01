@@ -117,7 +117,7 @@ const Contact = ({ language, translations }) => {
         <div className="bg-shape shape-1"></div>
         <div className="bg-shape shape-2"></div>
       </div>
-      <div className="section-number">06</div>
+      <div className="section-number">07</div>
     </section>
   );
 };
